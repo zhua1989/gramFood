@@ -17,7 +17,9 @@ def index
   request = HTTParty.get(@APIurl)
   #get random post and get image url 
   @random_post = request["data"].sample
+  #get the image url of the random gram post
   @random_image = @random_post["images"]["standard_resolution"]["url"]
+  #get the caption of the random post
   @random_captions = @random_post["caption"]["text"]
   puts @random_image
   puts @random_captions
