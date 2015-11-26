@@ -23,10 +23,7 @@ def index
   @random_captions = @random_post["caption"]["text"]
   puts @random_image
   puts @random_captions
-
-
-
-
+  
 end
 
 
