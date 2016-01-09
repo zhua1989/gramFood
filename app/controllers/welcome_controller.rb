@@ -21,6 +21,7 @@ def index
   @random_image = @random_post["images"]["standard_resolution"]["url"]
   #get the caption of the random post
   @random_captions = @random_post["caption"]["text"]
+  
   puts @random_image
   puts @random_captions
   
